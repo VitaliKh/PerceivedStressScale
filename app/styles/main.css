@@ -1,0 +1,42 @@
+
+body {
+    text-align: justify;
+}
+
+#panelMain {
+    background-color: rgba(0,0,0,0.71);
+}
+
+#panelMain a {
+    opacity: 1;
+}
+
+#home {
+    background-color: white;
+}
+
+#home img {
+    width: 100%;
+}
+
+
+#externalHeader h1 {
+    font-size: small;
+}
+
+#panelMain li[data-role="list-divider"] {
+    background-color: whitesmoke;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+#panelMain a {
+    background-color: rgba(0,0,0,0.71);
+    color: white;
+    font-weight: 400;
+}
+
+#video iframe {
+    width: 100%;
+}
+

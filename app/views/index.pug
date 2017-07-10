@@ -1,0 +1,25 @@
+
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width,initial-scale=1')
+        title Percieved Strss Scale
+        // build:css styles/jquery-mobile-1.4.5.min.css
+        link(rel='stylesheet', href='styles/jquery-mobile-1.4.5.min.css')
+        // endbuild
+        // build:css styles/main.css
+        link(rel='stylesheet', href='styles/main.css')
+        // endbuild
+        // build:js scripts/main.js
+        script(data-main='scripts/main', src='scripts/libs/require.js')
+        // endbuild
+    body
+        include includes/panel
+        include includes/header
+        include includes/footer
+        include includes/home
+        include includes/info
+        include includes/thingsToKnow
+        include includes/video
+        include includes/questionnaire

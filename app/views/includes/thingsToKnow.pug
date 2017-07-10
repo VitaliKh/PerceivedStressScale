@@ -1,0 +1,17 @@
+
+mixin foto (number)
+    a(href='#popup' + number, data-rel='popup', data-position-to='window', data-transition='pop')
+        img(src='./styles/images/' + number + '.jpg', style='width:33%')
+
+mixin popup (val, number)
+    div(id = val, data-role='popup', data-overlay-theme='b', data-theme='b', data-corners='false')
+        img(src='./styles/images/' + number + '.jpg' alt='Foto' + number)
+        a.ui-btn.ui-corner-all.ui-shadow.ui-btn-a.ui-icon-delete.ui-btn-icon-notext.ui-btn-right(href='#', data-rel='back') Close
+
+#thingsToKnow.my-page(data-role='page')
+    .ui-content(role='main')
+        each val in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            +foto(val)
+
+    each val, index in {1: 'popup1', 2: 'popup2', 3: 'popup3', 4: 'popup4', 5: 'popup5', 6: 'popup6', 7: 'popup7', 8: 'popup8', 9: 'popup9'}
+        +popup(val, index)
